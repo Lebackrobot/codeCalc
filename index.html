@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <!-- Fontawesome -->
+  <!-- My Style CSs -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+  <h4 class="text-center my-3"> Calculadora de Algoritmos &nbsp;<i class="fas fa-calculator text-danger"></i> </h4>
+
+
+  <div class="card-group justify-content-center">
+
+    <!--Card de Soma -->
+    <div class="col-6">
+      <div class="card text-white bg-dark mb-3" style="max-width: 36rem;">
+        <div class="card-header">
+          <h5>Soma &nbsp; <i class="fas fa-plus-circle text-danger"></i></h5>
+        </div>
+        <div class="card-body pl-5">
+          <form class=" ml-5 my-5 justify-content-center">
+            <div class="form-group">
+              <div class="row container">
+                <input type="number" class="form-control col-6" id="n1" placeholder="Informe um número" ng-model="name">
+                <button class="btn btn-danger">Ok</button>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="row container">
+                <input type="number" class="form-control col-6" id="n2" placeholder="Informe um número">
+                <button class="btn btn-danger">Ok</button>
+              </div>
+            </div>
+            <button class="btn btn-outline-danger" type="submit" id="submitSoma">Calcular</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    <!--Card de Multiplicação -->
+    <div class="col-6">
+      <div class="card text-white bg-dark mb-3" style="max-width: 36rem;">
+        <div class="card-header">
+          <h5>Multiplicação &nbsp; <i class="fas fa-times-circle text-danger"></i></h5>
+        </div>
+        <div class="card-body pl-5">
+          <form class=" ml-5 my-5 justify-content-center">
+            <div class="form-group">
+              <div class="row">
+                <input type="number" class="form-control col-6" id="n4" placeholder="Informe um número">
+                <button class="btn btn-danger">Ok</button>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="row">
+                <input type="number" class="form-control col-6" id="n5" placeholder="Informe um número">
+                <button class="btn btn-danger">Ok</button>
+              </div>
+            </div>
+            <button class="btn btn-outline-danger" type="submit" id="submitMult">Calcular</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="answ_soma"> </div>
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <!-- Angular -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.9/angular.js"></script>
+
+
+  <!-- Nosso scriptzinho -->
+  <script src="scripts/script.js"></script>
+  <script src="scripts/api.js"></script>
+</body>
+<html>
